@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Employee Salary Prediction</title>
+  </head>
+  <body>
+    <div class="login">
+      <h1>
+        Employee Salary Prediction
+      </h1>
+      <form action="{{url_for('predict')}}" method="POST">
+        <input type="number" name="experience" placeholder="Experience" required />
+        <input type="number" name="test_score" placeholder="Test score" required />
+        <input type="number" name="interview_score" placeholder="Interview score" required />
+        
+        <input type="submit" value="Submit" />
+      </form>
+      <br />
+      <br />
+      {{out_put}}
+    </div>
+  </body>
+</html>
